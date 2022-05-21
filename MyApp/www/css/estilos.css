@@ -1,0 +1,172 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*  ESTILOS ANDROID MENU */
+nav{
+    width: 90%;
+    float: left;
+    background-color: #5390d9;
+    transition: all 0.25s ease;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+.nav.active{
+    background-color: aliceblue;
+    padding: 12px;
+}
+
+header nav{
+    margin: 0px auto;
+    position: relative;
+    left: -100%;
+}
+
+.head h2{
+    text-align: left;
+    font-size: 22px;
+    color: white;
+}
+
+.menu_bar{
+    background-color:#5e60ce;
+    padding: 10px;
+    display: block;
+    font-size: 22px;
+    
+}
+
+.menu_bar span{
+    float: right;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: none;  
+    border-bottom: 1px solid rgba(192, 207, 191, 0.699);
+    margin-left: -2%; 
+}
+
+header nav ul li a{
+    color: white;
+    padding:4%;
+    display: block;
+    text-decoration: none;
+}
+
+header nav ul :hover{
+    padding:4%;
+    background-color: #56cfe1;
+}
+
+.subtema{
+    font-size: 12px;
+}
+
+
+.inicioIMG{
+    width: 380px;
+    margin-top: -36%;
+    margin-left: 0px;
+    border-radius: 20px;
+    
+}
+
+.videoWelcome{
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 16px;
+    border-radius: 12px;
+    display: flexbox;
+}
+
+.estadisticas{
+    margin-left: 10%;
+    margin-top: -6px;
+    border-radius: 12px;
+    width: 80%;
+    align-items: center;
+}
+
+.estadisticas2{
+    flex: auto;
+    border-radius: 12px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.subtitulos{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 4%;
+    color: #5390d9;
+}
+
+.estadisticasTexto{
+    font-size: 14px;
+    text-align: justify;
+    margin: 8px 30px;
+    
+}
+
+.ImagenAcercade{
+    width:90%;
+    margin-left: 7%;
+}
+
+.estadisticas3{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 6px;
+}
+
+.contagio{
+    width: 84%;
+    margin-left: 7%;
+    border-radius: 20%
+}
+
+.listaRecomienda{
+    margin: 6% 20%;
+    font-size: 13px;
+}
+.listaRecomienda li{
+    margin: 6%;
+    text-align: justify;
+}
+
+.test{
+    margin: 6% 10%;
+}
+
+.test label{
+    font-size: 16px;
+}
+
+.contenedorInputs{
+    margin: 5% 10%;
+}
+
+.botonR{
+    border-radius: 12px;
+    border: 2px dotted #5e60ce;
+    background-color: #7400B8;
+    padding: 4%;
+    margin: 10% 31%;
+    color: white;
+} 
+
+.botonR:hover{
+    background-color: #80FFDB;
+    color: black;
+} 
+

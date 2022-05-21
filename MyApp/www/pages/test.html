@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../img/icomoon/font.css" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu_bar">
+      <a href="#" class="bt-menu" style="color: aliceblue; text-decoration: none">
+        <span class="icon-list2"></span>UAEMEX-C19</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="./bienvenido.html"><span class="icon-home3"></span>&nbsp;Inicio</a>
+        </li>
+        <li>
+          <a href="./acercaDe.html"><span class="icon-bubbles"></span>&nbsp;Acerca del COVID-19</a>
+        </li>
+        <li>
+          <a href="./test.html"><span class="icon-pencil2"></span>&nbsp;Test de Covid</a>
+        </li>
+        <li>
+          <a href="#resultados"><span class="icon-user-check"></span>&nbsp;Mis resultados</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="home">
+    <br /><br /><br />
+    <img src="../img/SavecOVID.png" alt="" class="estadisticas" />
+    <h2 class="subtitulos">Test</h2>
+    <form action="" class="test">
+      <b style="color: #5e60ce">Contacto estrecho</b> <br />
+      <label>
+        ¿Tuvo usted algún contacto a menos de 2 metros durante un mínimo de 15
+        minutos o convive/cuida a alguna persona con COVID-19 sin medidas de
+        protección? </label><br />
+      <div class="contenedorInputs">
+        <input type="radio" id="contacto1" name="Choice" value="10" />
+        <label for="femenino">SI</label> &nbsp; &nbsp; &nbsp;
+        <input type="radio" id="contacto2" name="Choice" value="0" />
+        <label for="masculino">NO</label><br />
+      </div>
+
+      <b style="color: #5e60ce">Presencia de sintomas</b> <br />
+      <label>
+        ¿Presenta usted algun sintoma como fiebre, tos seca, dolor de cabeza,
+        dolor de cuerpo, etc? </label><br />
+
+        <div class="contenedorInputs">
+          <input type="radio" id="sintomaSI" name="Choice2" value="10" />
+          <label for="sintomaSI">SI</label>&nbsp; &nbsp; &nbsp;
+          <input type="radio" id="sintomaNO" name="Choice2" value="0" />
+          <label for="sintomaNO">NO</label><br />
+        </div>
+     
+      <b style="color: #5e60ce">Perseverancia de sintomas</b> <br />
+      <label> ¿Hace más de 14 dias que comenzarón sus sintomas? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="sintomasDias1" name="Choice3" value="10" />
+        <label for="sintomasDias1">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="sintomasDias2" name="Choice3" value="0" />
+        <label for="sintomasDias2">NO</label><br />
+      </div>
+
+      <b style="color: #5e60ce">Dificultad respiratoria</b> <br />
+      <label> ¿Tiene dificultad repentina para respirar o nota que le falta el aire? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="respiratoria1" name="Choice4" value="10" />
+        <label for="respiratoria1">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="respiratoria2" name="Choice4" value="0" />
+        <label for="respiratoria2">NO</label><br />
+      </div>
+
+      <b style="color: #5e60ce"> Temperatura Corporal</b> <br />
+      <label> ¿Presenta fiebre de más de 37°C.? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="fiebre" name="Choice5" value="10" />
+        <label for="fiebre">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="fiebre1" name="Choice5" value="0" />
+        <label for="fiebre1">NO</label><br />
+      </div>
+
+      <label> ¿Su temperatura es mayor a 39°C.? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="fiebre2" name="Choice6" value="10" />
+        <label for="fiebre">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="fiebre3" name="Choice6" value="0" />
+        <label for="fiebre1">NO</label><br />
+      </div>
+
+      <b style="color: #5e60ce">Otros sintomas</b> <br />
+      <label> ¿Recientemente tiene tos persistente? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="tos0" name="Choice7" value="10" />
+        <label for="tos0">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="tos1" name="Choice7" value="0" />
+        <label for="tos1">NO</label><br />
+      </div>
+
+      <label> ¿Percibe alteraciones o perdida del olfato? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="olfato0" name="Choice8" value="10" />
+        <label for="olfato0">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="olfato1" name="Choice8" value="0" />
+        <label for="olfato1">NO</label><br />
+      </div>
+
+      <label> ¿Nota malestar general cómo cansancio, dolor muacular o articular ? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="malestar0" name="Choice9" value="10" />
+        <label for="malestar0">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="malestar1" name="Choice9" value="0" />
+        <label for="malestar1">NO</label><br />
+      </div>
+
+      <label> ¿Detecta algun dolor de garganta o abdominal considerable? </label><br />
+
+      <div class="contenedorInputs">
+        <input type="radio" id="malestar2" name="Choice10" value="10" />
+        <label for="malestar2">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="malestar3" name="Choice10" value="0" />
+        <label for="malestar3">NO</label><br />
+      </div>
+    </form>
+      <button class="botonR" onclick="getData()">RESULTADO</button>
+  </section>
+
+  <br />
+    <img src="../img/inicioIMG.png" alt="" class="estadisticas"/>
+    <a name="resultados"></a>
+    <h2 class="subtitulos"> RESULTADOS</h2>
+    <br>
+    <div class="estadisticas">
+      <b style="color: #6930C3" id="titulo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POR FAVOR REALIZE EL TEST</b> <br />
+      <p id="dialogo" class="estadisticasTexto">***</p>
+    </div>
+    <br>
+    <img src="../img/covi.gif" id="imgWarning" class="estadisticas">
+
+  <footer></footer>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/test.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+
+</html>
