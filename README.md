@@ -3,6 +3,7 @@ Creacion de una aplicacion multiplataforma elaborada con el framework APACHE - C
 ## Heramientas y tecnologias utilizadas para el proyecto
 - - Apache Cordova
 - - Node JS
+- - Gradle
 - - HTML
 - - CSS 
 - - JS
