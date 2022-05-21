@@ -7,6 +7,7 @@ Creacion de una aplicacion multiplataforma elaborada con el framework APACHE - C
 - - HTML
 - - CSS 
 - - JS
+#APK adjunta en el repositorio MyApp/apk/app-debug.rar
 
 ![image](http://luisperis.com/wp-content/uploads/2016/12/apache-cordova.jpg)
 
