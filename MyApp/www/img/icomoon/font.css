@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z8l98q');
-  src:  url('fonts/icomoon.eot?z8l98q#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z8l98q') format('truetype'),
-    url('fonts/icomoon.woff?z8l98q') format('woff'),
-    url('fonts/icomoon.svg?z8l98q#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?jfywef');
+  src:  url('fonts/icomoon.eot?jfywef#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jfywef') format('truetype'),
+    url('fonts/icomoon.woff?jfywef') format('woff'),
+    url('fonts/icomoon.svg?jfywef#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,11 +31,23 @@
 .icon-pencil2:before {
   content: "\e906";
 }
+.icon-tv:before {
+  content: "\e95b";
+}
 .icon-bubbles:before {
   content: "\e96c";
 }
 .icon-user-check:before {
   content: "\e975";
+}
+.icon-aid-kit:before {
+  content: "\e998";
+}
+.icon-stats-bars:before {
+  content: "\e99c";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
 }
 .icon-list2:before {
   content: "\e9bb";

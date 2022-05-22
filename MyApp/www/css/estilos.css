@@ -8,7 +8,7 @@
 nav{
     width: 90%;
     float: left;
-    background-color: #5390d9;
+    background-color: #1a759f;
     transition: all 0.25s ease;
 }
 
@@ -34,15 +34,18 @@ header nav{
 }
 
 .menu_bar{
-    background-color:#5e60ce;
+    background-color:#184e77;
     padding: 10px;
     display: block;
     font-size: 22px;
-    
+    font-style: italic;
 }
-
 .menu_bar span{
     float: right;
+}
+
+.menu_bar a{
+    font-size: large;
 }
 
 header nav ul {
@@ -65,28 +68,75 @@ header nav ul li a{
 
 header nav ul :hover{
     padding:4%;
-    background-color: #56cfe1;
+    background-color: #34a0a4;
+}
+
+.cajas{
+    margin: 6% 12%;
+}
+
+.cajas h3{
+    font-size: medium;
+    font-style: oblique;
+    font-weight: 100;
+    color: white;
+}
+
+.caja1 , .caja2{
+    padding: 5%;
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #184e77;
+    box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.342);
+    transition: all 0.25s ease;
+    margin-left: 6%;
+}
+
+.caja1:hover , .caja2:hover{
+    background-color: #34a0a4;
+    color: black;
+}
+
+@media (max-width: 384px) {
+    
+.caja1 , .caja2{
+    padding: 3%;
+}
+
+}
+
+@media (max-width: 336px) {   
+    .caja1 , .caja2{
+        padding: 2%;
+    }
+
+    .cajas h3{
+        font-size: small;
+        font-style: oblique;
+        font-weight: 100;
+        color: white;
+    }
 }
 
 .subtema{
     font-size: 12px;
 }
 
-
 .inicioIMG{
     width: 380px;
     margin-top: -36%;
     margin-left: 0px;
     border-radius: 20px;
-    
 }
 
 .videoWelcome{
     flex-wrap: wrap;
     width: 90%;
-    margin-left: 16px;
+    margin-left: 6%;
     border-radius: 12px;
     display: flexbox;
+    box-shadow: 7px 10px 10px 0px rgba(0, 0, 0, 0.342);
 }
 
 .estadisticas{
@@ -95,20 +145,22 @@ header nav ul :hover{
     border-radius: 12px;
     width: 80%;
     align-items: center;
+    box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.342);
 }
 
 .estadisticas2{
     flex: auto;
     border-radius: 12px;
-    margin-left: 20px;
+    margin-left: 34px;
     width: 80%;
+    box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.342);
 }
 
 .subtitulos{
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 4%;
-    color: #5390d9;
+    color: #184e77;
 }
 
 .estadisticasTexto{
@@ -158,15 +210,14 @@ header nav ul :hover{
 
 .botonR{
     border-radius: 12px;
-    border: 2px dotted #5e60ce;
-    background-color: #7400B8;
+    border: 2px dotted #34a0a4;
+    background-color: #1a759f;
     padding: 4%;
-    margin: 10% 31%;
+    margin: 10% 34%;
     color: white;
 } 
 
 .botonR:hover{
-    background-color: #80FFDB;
-    color: black;
+    background-color: #34a0a4;
 } 
 

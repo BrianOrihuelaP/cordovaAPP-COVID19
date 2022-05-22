@@ -24,10 +24,14 @@
           <a href="./bienvenido.html"><span class="icon-home3"></span>&nbsp;Inicio</a>
         </li>
         <li>
+          <a href="./estadisticas.html"><span class="icon-stats-bars"></span>&nbsp;Estadisticas</a>
+        </li>
+        <li>
           <a href="./acercaDe.html"><span class="icon-bubbles"></span>&nbsp;Acerca del COVID-19</a>
         </li>
         <li>
-          <a href="./test.html"><span class="icon-pencil2"></span>&nbsp;Test de Covid</a>
+          <a href="./test.html" style="background-color: #34a0a4; border: 0px"><span
+              class="icon-pencil2"></span>&nbsp;Test de Covid</a>
         </li>
         <li>
           <a href="#resultados"><span class="icon-user-check"></span>&nbsp;Mis resultados</a>
@@ -58,13 +62,13 @@
         ¿Presenta usted algun sintoma como fiebre, tos seca, dolor de cabeza,
         dolor de cuerpo, etc? </label><br />
 
-        <div class="contenedorInputs">
-          <input type="radio" id="sintomaSI" name="Choice2" value="10" />
-          <label for="sintomaSI">SI</label>&nbsp; &nbsp; &nbsp;
-          <input type="radio" id="sintomaNO" name="Choice2" value="0" />
-          <label for="sintomaNO">NO</label><br />
-        </div>
-     
+      <div class="contenedorInputs">
+        <input type="radio" id="sintomaSI" name="Choice2" value="10" />
+        <label for="sintomaSI">SI</label>&nbsp; &nbsp; &nbsp;
+        <input type="radio" id="sintomaNO" name="Choice2" value="0" />
+        <label for="sintomaNO">NO</label><br />
+      </div>
+
       <b style="color: #5e60ce">Perseverancia de sintomas</b> <br />
       <label> ¿Hace más de 14 dias que comenzarón sus sintomas? </label><br />
 
@@ -76,7 +80,8 @@
       </div>
 
       <b style="color: #5e60ce">Dificultad respiratoria</b> <br />
-      <label> ¿Tiene dificultad repentina para respirar o nota que le falta el aire? </label><br />
+      <label>
+        ¿Tiene dificultad repentina para respirar o nota que le falta el aire? </label><br />
 
       <div class="contenedorInputs">
         <input type="radio" id="respiratoria1" name="Choice4" value="10" />
@@ -123,7 +128,8 @@
         <label for="olfato1">NO</label><br />
       </div>
 
-      <label> ¿Nota malestar general cómo cansancio, dolor muacular o articular ? </label><br />
+      <label>
+        ¿Nota malestar general cómo cansancio, dolor muacular o articular ? </label><br />
 
       <div class="contenedorInputs">
         <input type="radio" id="malestar0" name="Choice9" value="10" />
@@ -132,7 +138,8 @@
         <label for="malestar1">NO</label><br />
       </div>
 
-      <label> ¿Detecta algun dolor de garganta o abdominal considerable? </label><br />
+      <label>
+        ¿Detecta algun dolor de garganta o abdominal considerable? </label><br />
 
       <div class="contenedorInputs">
         <input type="radio" id="malestar2" name="Choice10" value="10" />
@@ -141,20 +148,21 @@
         <label for="malestar3">NO</label><br />
       </div>
     </form>
-      <button class="botonR" onclick="getData()">RESULTADO</button>
+    <button class="botonR" onclick="getData()">RESULTADO</button>
   </section>
 
   <br />
-    <img src="../img/inicioIMG.png" alt="" class="estadisticas"/>
-    <a name="resultados"></a>
-    <h2 class="subtitulos"> RESULTADOS</h2>
-    <br>
-    <div class="estadisticas">
-      <b style="color: #6930C3" id="titulo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POR FAVOR REALIZE EL TEST</b> <br />
-      <p id="dialogo" class="estadisticasTexto">***</p>
-    </div>
-    <br>
-    <img src="../img/covi.gif" id="imgWarning" class="estadisticas">
+  <img src="../img/inicioIMG.png" alt="" class="estadisticas" />
+  <a name="resultados"></a>
+  <h2 class="subtitulos">RESULTADOS</h2>
+  <br />
+  <div class="estadisticasTexto">
+    <b style="color: #6930c3" id="titulo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POR FAVOR REALIZE EL TEST</b>
+    <br />
+    <p id="dialogo" class="estadisticasTexto">***</p>
+  </div>
+  <br />
+  <img src="../img/covi.gif" id="imgWarning" class="estadisticas" />
 
   <footer></footer>
   <script src="../js/jquery-3.6.0.min.js"></script>
