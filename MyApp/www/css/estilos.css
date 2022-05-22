@@ -72,7 +72,7 @@ header nav ul :hover{
 }
 
 .cajas{
-    margin: 6% 12%;
+    margin: 6% 4%;
 }
 
 .cajas h3{
@@ -83,32 +83,32 @@ header nav ul :hover{
 }
 
 .caja1 , .caja2{
-    padding: 5%;
+    padding: 6%;
     display: inline-block;
     align-items: center;
     border-radius: 10px;
     background-color: #184e77;
     box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.342);
     transition: all 0.25s ease;
-    margin-left: 6%;
+    margin-left: 9%;
 }
 
 .caja1:hover , .caja2:hover{
-    background-color: #34a0a4;
+    background-color: #34a0a4;  
     color: black;
 }
 
-@media (max-width: 384px) {
+@media (max-width: 380px) {
     
 .caja1 , .caja2{
-    padding: 3%;
+    padding: 5%;
 }
 
 }
 
-@media (max-width: 336px) {   
+@media (max-width: 350px) {   
     .caja1 , .caja2{
-        padding: 2%;
+        padding: 4%;
     }
 
     .cajas h3{
