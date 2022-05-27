@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="../css/estilos.css" />
   <link rel="stylesheet" href="../img/icomoon/font.css" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <title>Document</title>
 </head>
 
 <body>
   <header>
     <div class="menu_bar">
+      <img src="../img/logoU.png" alt="" />
       <a href="#" class="bt-menu" style="color: aliceblue; text-decoration: none">
-        <span class="icon-list2"></span>UAEMEX-C19</a>
+        <span class="icon-menu"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UAEMEX-C19</a>
     </div>
 
     <nav>
@@ -36,6 +38,9 @@
         <li>
           <a href="#resultados"><span class="icon-user-check"></span>&nbsp;Mis resultados</a>
         </li>
+        <li>
+          <a href="./referencias.html"><span class="icon-earth"></span>&nbsp;Referencias</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -43,8 +48,24 @@
   <section class="home">
     <br /><br /><br />
     <img src="../img/SavecOVID.png" alt="" class="estadisticas" />
+    <br /><br /><br />
+    <p class="estadisticasTexto" style="font-style:italic;">
+      A continuación, encontrarás un formulario el cuál deberás llenar de la manera más objetiva y veraz para poder
+      brindarte un mejor resultado.
+      <br><br>
+      Este formulario ponderara las respuestas y en base a estas calculara la probabilidad del 66% de que hayas
+      contraído COVID-19, preguntas del formulario <b>extraidas de la página oficial del IMSS</b>.
+
+    </p>
     <h2 class="subtitulos">Test</h2>
     <form action="" class="test">
+
+      <label for="Nombre" class="nombre">Nombre completo:</label><br/>
+      <input class="nombreInput" ype="text" id="nombre" name="Nombre" value="" placeholder="Escribe tu nombre" required="true"><br />
+      <br>
+
+      <br>
+
       <b style="color: #5e60ce">Contacto estrecho</b> <br />
       <label>
         ¿Tuvo usted algún contacto a menos de 2 metros durante un mínimo de 15
@@ -150,7 +171,6 @@
     </form>
     <button class="botonR" onclick="getData()">RESULTADO</button>
   </section>
-
   <br />
   <img src="../img/inicioIMG.png" alt="" class="estadisticas" />
   <a name="resultados"></a>
@@ -163,11 +183,15 @@
   </div>
   <br />
   <img src="../img/covi.gif" id="imgWarning" class="estadisticas" />
-
-  <footer></footer>
+  <footer>
+    <p class="estadisticas3"
+      style="font-style:italic ; margin:20px 10px; padding: 10px; font-size: smaller;text-align: justify; border:solid 2px crimson;">
+      Este cuestionario no sustituye a una valoración médica; es únicamente informativo. Si empeoran tus síntomas o
+      molestias, es necesario acudir a atención médica o llamar al 800 2222 668
+    </p>
+  </footer>
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/test.js"></script>
   <script src="../js/menu.js"></script>
 </body>
-
 </html>

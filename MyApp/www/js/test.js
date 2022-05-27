@@ -1,5 +1,7 @@
-
+import { jsPDF } from "jspdf";
 getData = () => {
+
+    var nombre = document.getElementById("nombre").value;
 
     var res = new Array(9);
     var respuesta = new Array(9);
@@ -21,10 +23,9 @@ getData = () => {
 
     ponderacion = respuesta.reduce((acc, cur) => acc + cur, iv = 0);
     if (ponderacion == 0)
-        alert("POR FAVOR CONTESTE EL TEST!")
+        alert(`${nombre} no has realizado el test`)
     else
-        resultados(ponderacion)
-
+        resultados(ponderacion, nombre)
 }
 
 evalua = (res) => {
@@ -36,26 +37,35 @@ evalua = (res) => {
     return valor;
 }
 
-resultados = (ponderacion) => {
+resultados = (ponderacion, nombreCompleto) => {
 
     const tituloDOM = document.getElementById("titulo")
     const dialogoDOM = document.getElementById("dialogo")
     const imgDOM = document.getElementById("imgWarning")
 
     if (ponderacion <= 50) {
-        tituloDOM.textContent = "Riesgo Bajo"
-        dialogoDOM.textContent = "No te preocupes, tienes un riesgo bajo de contraer el COVID-19, aún así sigue nuestras recomendaciones. No solo se trata de tí, se trata de todos"
+        tituloDOM.textContent = `Estimad@ ${nombreCompleto} usted tiene un riesgo bajo de tener COVID-19`
+        dialogoDOM.textContent = "No te preocupes, tienes un riesgo bajo de contraer el COVID-19, aún así sigue nuestras recomendaciones y no bajes la guardia. No solo se trata de tí, se trata de todos nosotros"
         imgDOM.src = "../img/nowarning.gif"
     } else if (ponderacion > 50 && ponderacion <= 80) {
-        tituloDOM.textContent = "Riesgo Medio"
+        tituloDOM.textContent = `Estimad@ ${nombreCompleto} usted tiene un riesgo medio de tener COVID-19`
         dialogoDOM.textContent = "Le aconsejamos que visite a su medico, dado que tiene una buena probabilidad de tener COVID-19, por su seguridad le recomendamos vacunarse, si es el caso de que no se ha vacunado..."
         imgDOM.src = "../img/vaccine.gif"
     } else {
-        tituloDOM.textContent = "Riesgo Alto"
-        dialogoDOM.textContent = "Acuda de inmediato a su medico, usted tiene una probabilidad muy alta de tener COVID-19!!!, tratate lo más pronto posible por favor!"
+        tituloDOM.textContent = `Estimad@ ${nombreCompleto} usted tiene un riesgo alto de tener COVID-19`
+        dialogoDOM.textContent = "Acuda de inmediato a su medico, usted tiene una probabilidad muy alta de tener COVID-19!!!, tratese lo más pronto posible y acude con un especialista, comunicate al 800 2222 668 para una mayor atención."
         imgDOM.src = "../img/warning.gif"
     }
 }
+
+/* Carcteristica Pendiente
+crearPDF = () => {
+    const doc = new jsPDF();
+
+    doc.text("Hello world!", 10, 10);
+    doc.save("a4.pdf");
+}
+*/
 
 
 

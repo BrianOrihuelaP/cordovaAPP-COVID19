@@ -2,6 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    transition: all 0.25s ease;
 }
 
 /*  ESTILOS ANDROID MENU */
@@ -25,6 +26,12 @@ header nav{
     margin: 0px auto;
     position: relative;
     left: -100%;
+}
+
+.menu_bar img{
+    width: 50px;
+    margin-top: -10px;
+    position: absolute;
 }
 
 .head h2{
@@ -163,6 +170,28 @@ header nav ul :hover{
     color: #184e77;
 }
 
+.subtitulos2{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 4%;
+    color: #184e77;
+    font-style: italic;
+}
+.referencias{
+    font-size: 12px;
+    text-decoration: none;
+    color: #184e77;
+    text-align: justify;
+}
+
+.referencias:hover{
+    font-size: 14px;
+    text-align: justify;
+    margin: 8px 30px;
+    text-decoration: none;
+    color: #2589d6;
+}
+
 .estadisticasTexto{
     font-size: 14px;
     text-align: justify;
@@ -220,4 +249,20 @@ header nav ul :hover{
 .botonR:hover{
     background-color: #34a0a4;
 } 
+
+.nombre{
+    color: #5e60ce;
+    font-weight: 700;
+}
+
+.nombreInput{
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin-top: 1%;
+    border: 1px solid #1a759f;
+}
+
+.referenciasBox{
+    margin: 6%;
+}
 
