@@ -1,4 +1,4 @@
-import { jsPDF } from "jspdf";
+
 getData = () => {
 
     var nombre = document.getElementById("nombre").value;
